@@ -62,6 +62,7 @@ header
 }
 p, address, legend, fieldset, form, DL, DT {
 		color:#ffffff;
+                position:relative;
 		font-size:22px;
 		text-align:center;
 		white-space:normal;
