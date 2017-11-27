@@ -38,9 +38,9 @@ section {
 
 aside, sidebar
 {
-	width:5%; 
+	width:20%; 
 	float: right; 
-	
+	right:-25%;
 	position:relative;
 	white-space:normal;
 	 
