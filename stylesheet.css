@@ -40,7 +40,9 @@ aside, sidebar
 {
 	width:20%; 
 	float: right; 
-	right:-25%;
+	right:-24%;
+        left: 23%;
+        bottom:22%;
         
 	position:relative;
 	white-space:normal;
@@ -78,9 +80,15 @@ a, ul, li, nav
 	
 	font-size:24px;
 	white-space:normal;
+        text-align: center;
+        
+        overflow: hidden;
+        padding: 14px 16px;
+        text-decoration: none;
 	background-color:#191970;
 	font-family:"Copperplate Gothic Bold";
 	border-collapse:separate;
+        
 	
 	background: -webkit-linear-gradient(#000000, blue, #000000);
  		background: -o-linear-gradient(#000000, blue, #000000);
@@ -94,9 +102,40 @@ a, ul, li, nav
 
 }
 
+a {
+    border: 2px solid black;
+}
+
+/*Will display dropdown menu*/
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn  {
+    font-size:16px;
+    border: none;
+    outline: none;
+    color: white;
+    
+    background-color: inherit;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
 	a:link {color:#00ffff;}		/* unvisited link */
 a:visited {color:#ffffff; }	/* visited link */
-a:hover {color:#0000ff;}	/* mouse over link */
+a:hover {color:#ffffff;}	/* mouse over link */
 a:active {color:#00ffff;}	/* selected link */
 img {
 	border-style:outset;
