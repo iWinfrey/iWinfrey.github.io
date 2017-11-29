@@ -12,12 +12,15 @@ h3, h4, h5 { font-size:24px;
 
 }
 body {
-	width:78%;
-	margin:2%;
+	width:80%;
+       
+        
+	
         background-color:black;
 	
 }
 
+/*Heading text*/
  h1, h2, h3, h4, h5 {
 		color:#87CEEB;
  		background-color:navy;
@@ -36,23 +39,61 @@ section {
 	width:75%;
 }
 
+/*Areas containing content*/
+article
+{
+color:#FFFFFF;
+border:5px solid black;
+background-color:  transparent, #4C4C66;
+background:rgba(0, 100, 204, 0.5);
+white-space:normal;
+ position: relative;
+    width: 70%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+   
+    padding: 20px 14%;
+    
+    
+    z-index: 0;
+    -webkit-transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    -o-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+	
+}
+
+/*Random Quote and date/time*/
 aside, sidebar
 {
-	width:20%; 
-	float: right; 
-	right:-24%;
-        left: 23%;
-        bottom:22%;
+	width:22.2%; 
         
-	position:relative;
+	float: right; 
+        top:-22%;
+        position:relative;
+       right:-22.8%;
+        bottom:22%;
+        overflow:contain;
+        border: 2px solid blue;
+	
 	white-space:normal;
-	 
-	    background:-webkit-linear-gradient(#000000,#00008B,#000000);
-	     background:-o-linear-gradient(#000000,#00008B,#000000);
-	      background:-moz-linear-gradient(#000000,#00008B,#000000);
+	
+	background:-webkit-linear-gradient(#000000,#00008B,#000000);
+	background:-o-linear-gradient(#000000,#00008B,#000000);
+	background:-moz-linear-gradient(#000000,#00008B,#000000);
 	background:lienear-gradient(#000000,#00008B,#000000);
 }
 
+/*Scale to size on other media screens*/
+@media (max-width: 200%) {
+    aside, sidebar, h1, h2, header, section, p,
+    body, article, nav {
+      width:100%;
+    }
+}
 header
 
 {
@@ -133,10 +174,11 @@ a {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-	a:link {color:#00ffff;}		/* unvisited link */
+a:link {color:#00ffff;}		/* unvisited link */
 a:visited {color:#ffffff; }	/* visited link */
 a:hover {color:#ffffff;}	/* mouse over link */
 a:active {color:#00ffff;}	/* selected link */
+
 img {
 	border-style:outset;
 	border-color:#0000ff;
@@ -182,33 +224,7 @@ background: -webkit-linear-gradient(#000000,#FF0000,#000000);
  		background: lienear-gradient(#000000,#FF0000,#000000); 
 		border-color:#B8860B;
 }
-article
-{
-color:#FFFFFF;
-border:5px solid blue;
 
-
-
-white-space:normal;
- position: relative;
-    width: 70%;
-    left: 0;
-    top: 0%;
-    right: 0;
-    bottom: 50%;
-    padding: 30px 15%;
-
-    
-    z-index: 0;
-    -webkit-transform-origin: 0 50%;
-    -moz-transform-origin: 0 50%;
-    -ms-transform-origin: 0 50%;
-    -o-transform-origin: 0 50%;
-    transform-origin: 0 50%;
-	    /*background:rgba(204, 204, 204, 0.5);
-background-color:  transparent, #4C4C66;
-*\
-}
 
 
 /*------------------------------------*\

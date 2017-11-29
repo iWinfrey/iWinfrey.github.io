@@ -15,13 +15,21 @@ Date: 11/11/17
         <link rel="stylesheet" href="stylesheet.css">
         <title>Main Profile Page</title>      <!--Page title-->
         <meta charset="UTF-8">
+        <meta name="description" content="Personal portfolio of projects and demonstration of website design made by Isaiah Winfrey">
+        <meta name="author" content="Isaiah Winfrey">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+    
     <body>
+        <header><h1>Isaiah Winfrey's Web Portfolio</h1></header>
+            <div class="container">
         <h1 align="center">Home </h1>
        
        
         <nav>
+            <div class="dropdown">
+            <a href="index.html">Home</a>
+            </div>
             <div class="dropdown"> 
                 <a href="ProjectsPG.html">Projects</a>
             
@@ -37,13 +45,25 @@ Date: 11/11/17
             <a href="AboutMePG.html">About Me</a>
             </div>
         </nav>
+        <!--Aside menu with current date/time and random quotes-->
         <aside>
+           
+           <p>
+    <script type="text/javascript">
+document.write ('<p>The current date and time is: <span id="date-time">', new Date().toLocaleString(), '<\/span>.<\/p>')
+if (document.getElementById) onload = function () {
+	setInterval ("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
+}
+
+        
+</script></p>
+        
+            
             <p>Motivational Quote: </p>
-            <article>
+            
            
                 
                 <!--Random Quote Generator -->
-           
 <p>
 <script type="text/javascript">
 qte = [];
@@ -87,10 +107,14 @@ document.write("</DL>\n");
 </script>
 </p>
 </aside>
-            </article>
-       
+            
+       <!--Content-->
         <article>
             <section>
+                <p>This is a web portfolio that I designed using HTML5 and CSS3.
+                    It is not completed and this is only the start of it.
+                    I will be adding more content to the site as I figure out 
+                    new ideas.</p>
         <p>Anyways I still have ways to go but now that I have tech and software
             I am pretty sure this will go well</p>
         <p>This will be the main page in which users who visit the site will
@@ -102,9 +126,11 @@ document.write("</DL>\n");
             <section>
                 <p>Here is another section full of stuff that I'm testing.</p>
             </section>
+            
+            
             </article>
-       <!-- <img src="wrrryy.jpg" height="75%" width="50%" alt="wrrryy??"/>
-       -->
-        <div>TODO write content</div>
+    
+            </div>
+    
     </body>
 </html>
