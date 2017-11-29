@@ -47,9 +47,12 @@ border:5px solid black;
 background-color:  transparent, #4C4C66;
 background:rgba(0, 100, 204, 0.5);
 white-space:normal;
- position: relative;
-    width: 70%;
-    left: 0;
+    position:relative;
+   
+    
+ 
+    width: 40%;
+    left: 18px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -69,13 +72,13 @@ white-space:normal;
 /*Random Quote and date/time*/
 aside, sidebar
 {
-	width:22.2%; 
+	width:250px; 
         
 	float: right; 
-        top:-22%;
+        
         position:relative;
        right:-22.8%;
-        bottom:22%;
+        
         overflow:contain;
         border: 2px solid blue;
 	
