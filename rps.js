@@ -3,6 +3,7 @@ confirm("Let's play a game?");
   loss=0;
   win=0;
   tie=0;
+  rounds=0;
     
 var userChoice; 
 userChoice = prompt("Do you accept? (enter yes or no)");
@@ -27,6 +28,7 @@ else {
 	alert("I see you're scared of me. It's okay I'll go easy on you.");
 }
 
+rounds = prompt("How many rounds would you like to play?");
 //10 rounds start
 
 //10 rounds stop0
@@ -41,10 +43,10 @@ else {
 
 //var compare = function(userChoice , computerChoice) {
 i =0;
-while (i <= 5) {
-   if (i !== 5) {
+while (i < rounds) {
+   if (i !== rounds) {
     userChoice = prompt("Choose your weapon(rock,paper,scissors)" + "Win: " +win + 
-            "Lose: " +loss +"Tie: "+tie + "Round: "+i );
+            " Lose: " +loss +" Tie: "+tie + " Round: "+i );
 
 var computerChoice = Math.random();
 if (computerChoice < 0.34) {
@@ -120,9 +122,20 @@ alert("Computer: " + computerChoice);
                 alert("Current Round: " + i);
     	} 
    }
-   
-}
 
+}
+alert("Results: Wins: " +win + " Losses: " +loss +" Ties: "+tie + " Total Rounds played: "+rounds)
+//if (win > loss && win > tie) {
+  // alert("You win! Computer loses. Results: Wins: " +win + " Losses: " +loss +" Ties: "+tie + " Total Rounds played: "+rounds);
+  // }
+//else if (loss > win && loss > tie){
+      // alert("You lose, computer wins Results: Wins: " +win + " Losses: " +loss +" Ties: "+tie + " Total Rounds played: "+rounds);
+
+//}
+//else if (tie > win && tie > loss) {
+       //alert("It's a tie! Results: Wins: " +win + " Losses: " +loss +" Ties: "+tie + " Total Rounds played: "+rounds);
+
+//}
 //}; //ends the function
     	
         	

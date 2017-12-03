@@ -52,7 +52,7 @@ white-space:normal;
     
  
     width: 40%;
-    left: 18px;
+    left: 20px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -227,7 +227,6 @@ background: -webkit-linear-gradient(#000000,#FF0000,#000000);
  		background: lienear-gradient(#000000,#FF0000,#000000); 
 		border-color:#B8860B;
 }
-
 
 
 /*------------------------------------*\
