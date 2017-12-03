@@ -124,7 +124,7 @@ alert("Computer: " + computerChoice);
    }
 
 }
-alert("Results: Wins: " +win + " Losses: " +loss +" Ties: "+tie + " Total Rounds played: "+rounds)
+alert("Results: Wins: " +win + " Losses: " +loss +" Ties: "+tie + " Total Rounds played: "+rounds);
 //if (win > loss && win > tie) {
   // alert("You win! Computer loses. Results: Wins: " +win + " Losses: " +loss +" Ties: "+tie + " Total Rounds played: "+rounds);
   // }
