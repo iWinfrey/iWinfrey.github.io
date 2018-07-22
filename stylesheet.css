@@ -168,7 +168,26 @@ a {
     background-color: inherit;
     
 }
+.dropdown-content2 {
+ /***********
+    display: none;
+    postion: fixed;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+ ****************/
+   height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 2px;
 
+}
 .dropdown-content {
     display: none;
     position: absolute;
