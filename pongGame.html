@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pong Game</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="pong">
+        <canvas id ="gameCanvas" width ="800" height ="450"></canvas>
+       
+        
+        
+        <script>
+            /******************************
+             * 
+             * This is a pong game that I made based on a tutorial video that I watched
+             * to make it. It's a bit different than what it had me do 
+             * and hopefully I will add some other stuff to change it up a bit
+             */
+            var canvas;
+            var canvasContext;
+            var ballX = 50;
+            var ballY = 50;
+            var ballSpeedX = 10;
+            var ballSpeedY = 4;
+            
+            var paddle1Y = 250;             //left paddle
+            var paddle2Y = 250;             //right paddle
+            const PADDLE_HEIGHT = 100;
+            const PADDLE_THICKNESS = 10;
+            
+            var showingWinScreen = false;
+            
+            var player1Score =0;
+            var player2Score = 0;
+            const WINNING_SCORE = 3;            //win score
+            //evt = event
+            //Will allow the paddle to follow the position of the mouse
+            function calculateMousePos(evt) {
+                var rect = canvas.getBoundingClientRect();
+                var root = document.documentElement;
+                var mouseX = evt.clientX - rect.left - root.scrollLeft;
+                var mouseY = evt.clientY - rect.top - root.scrollTop;
+                return{
+                    x:mouseX,
+                    y:mouseY
+                };
+            }
+            
+            function handleMouseClick(evt) {
+                if(showingWinScreen) {
+                    player1Score = 0;
+                    player2Score = 0;
+                    showingWinScreen = false;
+                }
+            }
+            window.onload = function() {
+                
+                canvas = document.getElementById('gameCanvas');                                         //will link to canvas dimensions
+                canvasContext = canvas.getContext('2d');
+                
+                var framesPerSecond = 30;
+                setInterval(function() { moveEverything(); drawEverything(); }, 1000/framesPerSecond);      //Number is incremented in milliseconds
+                
+                canvas.addEventListener('mousedown', handleMouseClick);
+                
+                
+                canvas.addEventListener('mousemove', function(evt) 
+                {var mousePos = calculateMousePos(evt); 
+                 paddle1Y = mousePos.y - (PADDLE_HEIGHT/2);   });
+          
+            }
+            
+            function ballReset() {
+                if(player1Score >= WINNING_SCORE || player2Score >= WINNING_SCORE) {
+                    
+                    showingWinScreen = true;
+                }
+                
+                ballSpeedX = -ballSpeedX;               //Will have ball bouncing in different direction
+                
+                ballX = canvas.width/2;                 //Will position the ball in the center of the canvas screen
+                ballY = canvas.height/2;
+            }
+            
+            //A.I. paddle movement
+            function computerMovement() {
+                var paddle2YCenter = paddle2Y + (PADDLE_HEIGHT/2);
+                if(paddle2YCenter < ballY -35) {
+                    paddle2Y  +=6;
+                    
+                }
+                else if(paddle2YCenter > ballY+35){
+                    paddle2Y -= 6;
+                }
+            }
+            function moveEverything() {
+                if(showingWinScreen) {
+                    return;
+                }
+                computerMovement(); 
+              
+                ballX += ballSpeedX;
+                ballY += ballSpeedY;
+                //Switching the negative and positive values back and forth will allow it to bounce on the screen 
+                //from edge to edge
+                
+                  //bounce wall of left side
+                if(ballX < 0) {
+                    if(ballY > paddle1Y && ballY < paddle1Y+PADDLE_HEIGHT) {
+                        ballSpeedX = -ballSpeedX;
+                        
+                        //will adjust the ball angle depending on where it's hit on the paddle
+                        var deltaY = ballY - (paddle1Y + PADDLE_HEIGHT/2);
+                        ballSpeedY = deltaY * 0.35;
+                    }
+                    else {
+                        player2Score++;             //must be BEFORE ballReset()
+                      ballReset();  
+                      
+                    }
+                }
+         
+                //if ball position exceeds screen width, bounce of ride side of screen
+                if (ballX > canvas.width) {
+                   
+                    if(ballY > paddle2Y && ballY < paddle2Y+PADDLE_HEIGHT) {
+                        ballSpeedX = -ballSpeedX;
+                        
+                        //will adjust the ball angle depending on where it's hit on the paddle
+                        var deltaY = ballY - (paddle2Y + PADDLE_HEIGHT /2);
+                        ballSpeedY = deltaY * 0.35;
+                    }
+                    else {
+                        player1Score++;
+                      ballReset();  
+                      
+                    }
+                }
+              
+                if (ballY < 0) {
+                    ballSpeedY = -ballSpeedY;
+                    
+                }
+                if(ballY > canvas.height) {
+                    ballSpeedY = -ballSpeedY;
+                }
+            }
+            
+            //Function will create the vertical net
+            function drawNet() {
+                for (var i=0; i<canvas.height; i+=40) {
+                    colorRect(canvas.width/2-1, i, 2,20, 'white');
+                }
+            }
+            function drawEverything() {
+                
+             //next line blanks out the screen with black
+                colorRect(0,0, canvas.width, canvas.height, 'black');
+                
+                if(showingWinScreen) {
+                    canvasContext.fillStyle = 'white';                      //Will change text color to white
+                    
+                    if (player1Score >= WINNING_SCORE) {
+                        canvasContext.fillText("Left Player Won!", 350, 200);
+                    } else if(player2Score >= WINNING_SCORE){
+                       canvasContext.fillText("Right Player Won!",350, 200);
+               
+            }
+                    canvasContext.fillText( "click to continue", 350, 500);
+                    return; 
+                }
+                
+                drawNet();
+                //this is left player paddle
+                colorRect(0,paddle1Y, PADDLE_THICKNESS, PADDLE_HEIGHT, 'white');
+                //this is the right
+                colorRect(canvas.width - 10, paddle2Y, PADDLE_THICKNESS, PADDLE_HEIGHT, 'white');
+                //next line draws 
+                colorRect(ballX, ballY,10,10, 'red');
+                
+                //Scoreboard
+                canvasContext.fillText(player1Score, 100, 100);
+                canvasContext.fillText(player2Score, canvas.width -100, 100);
+                
+            }
+            
+            function colorRect(leftX, topY, width, height, drawColor) {
+                canvasContext.fillStyle = drawColor;
+                canvasContext.fillRect(leftX, topY, width, height);
+            }
+                </script>  </div>
+    </body>
+</html>
