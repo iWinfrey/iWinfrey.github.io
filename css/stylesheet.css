@@ -90,7 +90,7 @@ white-space:normal;
     transform-origin: 0 50%;
  */
    
- width: 70%;
+ width: 68%;
   
         
 
@@ -100,7 +100,7 @@ white-space:normal;
 /*Random Quote and date/time*/
 aside, sidebar
 {
-	width:20%; 
+	width:30%; 
         
 	float: right; 
        border: 2px solid blue;
