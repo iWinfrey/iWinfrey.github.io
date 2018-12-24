@@ -7,35 +7,32 @@ and open the template in the editor.
 <html>
     
     <head>
-         <link rel="stylesheet" href="stylesheet.css">
+         <link rel="stylesheet" href="css/stylesheet.css">
         <title>Projects Page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1 align = "center"> Projects </h1>
-          <nav>
-              <div class="dropdown">
-                  <a href="index.html">Home</a>
-              </div>
+        <h1 align = "center"> Projects Gallery </h1>
+             <nav>
+ <div class="container">
+
+            <div class="dropdown">
+            <a href="index.html">Home</a>
+            </div>
             <div class="dropdown"> 
                 <a href="ProjectsPG.html">Projects</a>
-            
-                
-            <div class="dropdown-content">
-                <a href="#">Something(just a test)</a>
-                <a href="#">Something else(just a test)</a>
-            </div>
-            
-            
-            </div>
+              </div>
+          
+  
             <div class ="dropdown">
             <a href="AboutMePG.html">About Me</a>
+            </div>  
+     <div class="dropdown">
+                <a href="updatepage.html">Updates</a>
             </div>
         </nav>
-         <div id="particles-js"></div><script  src="particles.js"></script>
-<script src="app.js"></script>
-        <aside>
+          <aside>
            
             <p>
     <script type="text/javascript">
@@ -45,7 +42,15 @@ if (document.getElementById) onload = function () {
 }
 
         
-    </script></p></aside><section>
+    </script>
+            </p>
+        </aside>
+        <main>
+         <div id="particles-js"></div><script  src="scripts/particles.js"></script>
+<script src="scripts/app.js"></script>
+       
+
+<section>    
         <article>
         <p>Here is where you would find the projects on this page. I still need to search through and find them
         while also making changes to them so that they work properly. There will be more added in the future.</p>
@@ -70,9 +75,14 @@ if (document.getElementById) onload = function () {
                 go to another page to leave. Use the mouse to control the left side paddle.
                 <a href='pongGame.html'>Pong Game</a>
         </article>
-        <h2>Java</h2>
+        <h2>Java/Kotlin</h2>
         <article>
-            <p>There is nothing at the moment but this is where my java projects would be.</p>
+            <p>Here is one of my projects that I've worked in my Intro to Software Engineering class. This project
+            was worked on in a group of 4 people that were in my class. I worked on this app with my other group members: Aaron Hammer, Trevor Konya, and 
+            Madison Yancey. We were given a python API that was capable of 
+            processing image data and determine if it contains any food or not. It would use confidence intervals as a method
+            of measurement to see if the images that are uploaded to the server are food and would return the results. </p>
+            <a href='seefoodapp.html'>SeeFood App Screenshots</a>
         </article>
         <h2>C#</h2>
         <article>
@@ -87,5 +97,6 @@ if (document.getElementById) onload = function () {
         </article>
         
     </section>
+        </main>
     </body>
 </html>

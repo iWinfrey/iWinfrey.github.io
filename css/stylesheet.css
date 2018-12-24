@@ -8,25 +8,44 @@ and open the template in the editor.
     Author     : bioni_000
 */
 
-h3, h4, h5 { font-size:24px;
+@media only screen and (max-width: 480px) {
+    nav {
+        display: block;
+        width: 60%;
+    }
+}
+
+img {
+    width:200px;
+}
+h3, h4, h5 { 
+    font-size:24px;
 
 }
+
+main {
+     width:100%;
+       background: #000000;
+}
+
+
 body {
 	
-       margin:0;
-       padding:0;
-       width:80%;
-       background: #000000;
-       
-	
-       
-	
+     width:100%;
+     background: #000000;
+     margin: -10px;
+      
+
 }
 
+/*
+Pong Game
+*/
 .pong {
     border: solid;
     color: blue;
 }
+
 /*Heading text*/
  h1, h2, h3, h4, h5 {
 		color:#87CEEB;
@@ -42,10 +61,7 @@ body {
 
 }
 
-section {
-	width:100%;
-        text-align:center;
-}
+
 
 /*Areas containing content*/
 article
@@ -54,44 +70,49 @@ color:#FFFFFF;
 border:2px solid black;
 background-color:  transparent, #4C4C66;
 background:rgba(0, 100, 204, 0.5);
+
+
+/*
 white-space:normal;
     position:relative;
-   
-   
- 
     width: 40%;
     left:0px;
     top: 0;
     right: 0;
     bottom: 0;
    
-    padding: 20px 24%;
-        
-
+     padding: 20px 24%;
     z-index: 0;
     -webkit-transform-origin: 0 50%;
     -moz-transform-origin: 0 50%;
     -ms-transform-origin: 0 50%;
     -o-transform-origin: 0 50%;
     transform-origin: 0 50%;
+ */
+   
+ width: 70%;
+  
+        
+
 	
 }
 
 /*Random Quote and date/time*/
 aside, sidebar
 {
-	width:250px; 
+	width:20%; 
         
-	float: left; 
-        
+	float: right; 
+       border: 2px solid blue;
+        /*
         position:relative;
        right:-90.8%;
         
         overflow:contain;
-        border: 2px solid blue;
+        
 	
 	white-space:normal;
-	
+	*/
 	background:-webkit-linear-gradient(#000000,#00008B,#000000);
 	background:-o-linear-gradient(#000000,#00008B,#000000);
 	background:-moz-linear-gradient(#000000,#00008B,#000000);
@@ -100,17 +121,10 @@ aside, sidebar
 
 /*Scale to size on other media screens*/
 
-header
 
-{
-	width:80%;
-	position:relative;
-	
-	
-	
-	
-}
-p, address, legend, fieldset, form, DL, DT {
+
+
+p, DL, DT {
 		color:#ffffff;
            
                 position:relative;
@@ -123,7 +137,7 @@ p, address, legend, fieldset, form, DL, DT {
 
 
 	
-a, ul, li, nav
+a, nav
 {
 	
 	font-size:24px;
@@ -131,11 +145,17 @@ a, ul, li, nav
         text-align: center;
         
         overflow: hidden;
-        padding: 14px 16px;
+        /*
+        
         text-decoration: none;
+        border-collapse:separate;
+        
+        
+        */
+        padding: 5px 5px;
 	background-color:#191970;
 	font-family:"Copperplate Gothic Bold";
-	border-collapse:separate;
+	
         
 	
 	background: -webkit-linear-gradient(#000000, blue, #000000);
@@ -172,15 +192,17 @@ a {
     background-color: inherit;
     
 }
+
+/*
 .dropdown-content2 {
- /***********
+
     display: none;
     postion: fixed;
     background-color: #000000;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
- ****************/
+ 
    height: 100%;
   width: 200px;
   position: fixed;
@@ -200,6 +222,8 @@ a {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+*/
+
 a:link {color:#00ffff;}		/* unvisited link */
 a:visited {color:#ffffff; }	/* visited link */
 a:hover {color:#ffffff;}	/* mouse over link */
@@ -211,19 +235,15 @@ img {
 	border-width:10px;
 	
 	}
+        
+/*
 table, th, td caption {
 	color:#FFFFFF;
 	font-size:24px;
 	border:none;
 }
-th
-{
-text-align:top;
-}
-td
-{
-text-align:right;
-}
+*/
+
 
 a href
 {
@@ -236,6 +256,8 @@ background: -webkit-linear-gradient(#000000,#FF0000,#000000);
  		background: -moz-linear-gradient(#000000,#FF0000,#000000);
  		background: lienear-gradient(#000000,#FF0000,#000000); 
 		}
+                
+/*
 caption
 {
 font-size:24px;
@@ -246,7 +268,7 @@ background: -webkit-linear-gradient(#000000,#FF0000,#000000);
  		background: lienear-gradient(#000000,#FF0000,#000000); 
 		border-color:#B8860B;
 }
-
+*/
 
 /*------------------------------------*\
     NAV
@@ -266,7 +288,7 @@ nav{
 
 nav li{
     float:left;
-    margin-right:10px;
+    margin-right:40%;
     position:relative;
 }
 /*
@@ -332,8 +354,10 @@ html
     background: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+
 #particles-js{
-height: 140%;
+height:100%;
 width:100%;
 position:absolute;
 background-repeat: no-repeat;
