@@ -9,70 +9,84 @@ and open the template in the editor.
 */
 
 @media only screen and (max-width: 480px) {
-    nav {
-        display: block;
-        width: 60%;
-    }
+  nav {
+    display: inline;
+    /* width: 60%; */
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+    float: left;
+  }
+
+  .portfolioBanner {
+    width: 100%;
+  }
+  .portfolioBanner > img {
+    width: 100%;
+    height: 250px;
+  }
 }
 
 img {
-    width:200px;
+  width: 200px;
 }
-h3, h4, h5 { 
-    font-size:24px;
-
+h3,
+h4,
+h5 {
+  font-size: 24px;
 }
 
 main {
-     width:100%;
-       background: #000000;
+  width: 100%;
+  background: #000017;
 }
 
-
 body {
-	
-     width:100%;
-     background: #000000;
-     margin: -10px;
-      
-
+  width: 100%;
+  background: #000017;
+  margin: -10px;
 }
 
 /*
 Pong Game
 */
 .pong {
-    border: solid;
-    color: blue;
+  border: solid;
+  color: blue;
 }
 
 /*Heading text*/
- h1, h2, h3, h4, h5 {
-		color:#87CEEB;
- 		background-color:navy;
- 		text-align:center;
- 		white-space:normal;
-           
- 		font-family:"Stencil STD";
- 		background: -webkit-linear-gradient(#000000, #00008B, #000000);
- 		background: -o-linear-gradient(#000000, #00008B, #000000);
- 		background: -moz-linear-gradient(#000000, #00008B, #000000);
- 		background: lienear-gradient(#000000, #00008B, #000000); 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #1cb0eb;
+  background-color: #032750;
+  text-align: center;
+  white-space: normal;
 
+  font-family: "Stencil STD";
+  /* background: -webkit-linear-gradient(#000000, #00008b, #000000);
+  background: -o-linear-gradient(#000000, #00008b, #000000);
+  background: -moz-linear-gradient(#000000, #00008b, #000000);
+  background: lienear-gradient(#000000, #00008b, #000000); */
 }
 
-
-
 /*Areas containing content*/
-article
-{
-color:#FFFFFF;
-border:2px solid black;
-background-color:  transparent, #4C4C66;
-background:rgba(0, 100, 204, 0.5);
+article {
+  color: #ffffff;
+  border: 2px solid black;
+  background-color: transparent, #4c4c66;
+  background: rgba(0, 100, 204, 0.5);
 
-
-/*
+  /*
 white-space:normal;
     position:relative;
     width: 40%;
@@ -89,22 +103,20 @@ white-space:normal;
     -o-transform-origin: 0 50%;
     transform-origin: 0 50%;
  */
-   
- width: 68%;
-  
-        
 
-	
+  width: 68%;
 }
 
 /*Random Quote and date/time*/
-aside, sidebar
-{
-	width:30%; 
-        
-	float: right; 
-       border: 2px solid blue;
-        /*
+aside,
+sidebar {
+  width: 30%;
+
+  float: right;
+  border: 2px solid blue;
+  background: rgba(0, 100, 204, 0.5);
+
+  /*
         position:relative;
        right:-90.8%;
         
@@ -113,85 +125,100 @@ aside, sidebar
 	
 	white-space:normal;
 	*/
-	background:-webkit-linear-gradient(#000000,#00008B,#000000);
-	background:-o-linear-gradient(#000000,#00008B,#000000);
-	background:-moz-linear-gradient(#000000,#00008B,#000000);
-	background:lienear-gradient(#000000,#00008B,#000000);
+  /* background: -webkit-linear-gradient(#000000, #00008b, #000000);
+  background: -o-linear-gradient(#000000, #00008b, #000000);
+  background: -moz-linear-gradient(#000000, #00008b, #000000);
+  background: lienear-gradient(#000000, #00008b, #000000); */
 }
 
 /*Scale to size on other media screens*/
 
+p,
+DL,
+DT {
+  color: #ffffff;
 
-
-
-p, DL, DT {
-		color:#ffffff;
-           
-                position:relative;
-		font-size:22px;
-		text-align:center;
-		white-space:normal;
-	
-
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  white-space: normal;
 }
 
+nav, a {
+  font-size: 24px;
 
-	
-a, nav
-{
-	
-	font-size:24px;
-	
-        text-align: center;
-        
-        overflow: hidden;
-        /*
-        
-        text-decoration: none;
-        border-collapse:separate;
-        
-        
-        */
-        padding: 5px 5px;
-	background-color:#191970;
-	font-family:"Copperplate Gothic Bold";
-	
-        
-	
-	background: -webkit-linear-gradient(#000000, blue, #000000);
- 		background: -o-linear-gradient(#000000, blue, #000000);
- 		background: -moz-linear-gradient(#000000, blue, #000000);
- 		background: lienear-gradient(#000000, blue, #000000); 
- 		text-decoration:none;
- 		display:block;
- 		
- 		
+  text-align: center;
+
+  overflow: hidden;
+
+  padding: 5px 5px;
+  /* background-color: #191970; */
+  font-family: "Copperplate Gothic Bold";
 
 
+
+  /* background: -webkit-linear-gradient(#000000, blue, #000000);
+  background: -o-linear-gradient(#000000, blue, #000000);
+  background: -moz-linear-gradient(#000000, blue, #000000);
+  background: lienear-gradient(#000000, blue, #000000); */
+  text-decoration: none;
+  display: block;
 }
 
 a {
-    border: 2px solid black;
+  border: 5px solid #041a44;
+  color: #194bf0;
+  background-color: #063e7e;
+  /* background: -webkit-linear-gradient(#000000, blue, #000000);
+  background: -o-linear-gradient(#000000, blue, #000000);
+  background: -moz-linear-gradient(#000000, blue, #000000);
+  background: lienear-gradient(#000000, blue, #000000); */
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+
+/*Portfolio banner*/
+/* .portfolioBanner > video  {
+  text-align: center;
+  padding: 60px;
+  width: 100%;
+} */
+.portfolioBanner {
+  width: 100%;
+}
+.portfolioBanner > img {
+  width: 100%;
+  height: 250px;
+}
+
 
 /*Will display dropdown menu*/
-.dropdown:hover .dropdown-content {
-    display:block;
+/* .dropdown:hover .dropdown-content {
+  display: block;
 }
 .dropdown {
-    float: left;
-    overflow: hidden;
+  float: left;
+  overflow: hidden;
 }
 
-.dropdown .dropbtn  {
-    font-size:16px;
-    border: none;
-    outline: none;
-    color: white;
-    
-    background-color: inherit;
-    
-}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+
+  background-color: inherit;
+} */
 
 /*
 .dropdown-content2 {
@@ -224,18 +251,25 @@ a {
 }
 */
 
-a:link {color:#00ffff;}		/* unvisited link */
-a:visited {color:#ffffff; }	/* visited link */
-a:hover {color:#ffffff;}	/* mouse over link */
-a:active {color:#00ffff;}	/* selected link */
+a:link {
+  color: #00ffff;
+} /* unvisited link */
+a:visited {
+  color: #ffffff;
+} /* visited link */
+a:hover {
+  color: #ffffff;
+} /* mouse over link */
+a:active {
+  color: #00ffff;
+} /* selected link */
 
 img {
-	border-style:outset;
-	border-color:#0000ff;
-	border-width:10px;
-	
-	}
-        
+  /* border-style: outset; */
+  /* border-color: #0000ff; */
+  border-width: 10px;
+}
+
 /*
 table, th, td caption {
 	color:#FFFFFF;
@@ -244,19 +278,16 @@ table, th, td caption {
 }
 */
 
+a href {
+  font-size: 24px;
+}
+tr {
+  background: -webkit-linear-gradient(#000000, #ff0000, #000000);
+  background: -o-linear-gradient(#000000, #ff0000, #000000);
+  background: -moz-linear-gradient(#000000, #ff0000, #000000);
+  background: lienear-gradient(#000000, #ff0000, #000000);
+}
 
-a href
-{
-	font-size:24px;
-	}
-tr 
-{
-background: -webkit-linear-gradient(#000000,#FF0000,#000000);
- 		background: -o-linear-gradient(#000000,#FF0000,#000000);
- 		background: -moz-linear-gradient(#000000,#FF0000,#000000);
- 		background: lienear-gradient(#000000,#FF0000,#000000); 
-		}
-                
 /*
 caption
 {
@@ -280,17 +311,17 @@ nav{
    	white-space:normal;
     margin:0 auto;
     float:left; /* Clear floats */
-  /*  width:100%; *\}
+/*  width:100%; *\}
     /* Bring the nav above everything else--uncomment if needed.
     position:relative;
     z-index:5;
     */
 
-nav li{
-    float:left;
-    margin-right:40%;
-    position:relative;
-}
+/* nav li {
+  float: left;
+  margin-right: 40%;
+  position: relative;
+} */
 /*
 nav a{
     display:block;
@@ -348,14 +379,13 @@ nav a:hover{
 
 /* ---- particles.js container ---- */
 
-html 
-{
-    max-width: 100%;
-    background: transparent;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+html {
+  max-width: 100%;
+  background: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-
+/* 
 #particles-js{
 height:100%;
 width:100%;
@@ -364,4 +394,4 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: 100% 100%;
 
-}
+} */

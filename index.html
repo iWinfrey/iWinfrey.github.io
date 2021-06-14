@@ -23,28 +23,33 @@ Date: 11/11/17
     <body>
  
         <header>
-            <h1>Isaiah Winfrey's Web Portfolio</h1>
-            <h1 align="center">Home </h1>
+            <div class="portfolioBanner">
+            <!-- <h1>Isaiah Winfrey's Web Portfolio</h1> -->
+            <img src="images/iWinfreyBan.gif" alt="Portfolio Banner">
+            <!-- <video playsinline autoplay muted loop> -->
+            <!-- <source src="images/iWinfreyBanner.mp4" type="video/mp4"> -->
+            <!-- </video> -->
+            </div>
         </header>
                   
         <nav>
- <div class="container">
-    
-            <div class="dropdown">
-            <a href="index.html">Home</a>
-            </div>
-            <div class="dropdown"> 
-                <a href="ProjectsPG.html">Projects</a>
-              </div>
-            <div class="dropdown">
-                <a href="updatepage.html">Updates</a>
-            </div>
+ <!-- <div class="container"> -->
+        <ul>
+            <!-- <div class="dropdown"> -->
+           <li><a href="index.html">Home</a></li> 
+            <!-- </div> -->
+            <!-- <div class="dropdown">  -->
+                <li><a href="ProjectsPG.html">Projects</a></li>
+              <!-- </div> -->
+            <!-- <div class="dropdown"> -->
+                <li><a href="updatepage.html">Updates</a></li>
+            <!-- </div> -->
   
-            <div class ="dropdown">
-            <a href="AboutMePG.html">About Me</a>
-            </div>
+            <!-- <div class ="dropdown"> -->
+            <li><a href="AboutMePG.html">About Me</a></li>
+           </ul>
         </nav>
-         
+          <!-- </div> -->
         
         <!--Aside menu with current date/time and random quotes-->
         <aside>
@@ -68,8 +73,6 @@ qte = [];
 person = [];
 qte[0] = "You have enemies? Good. That means you stood up for something, sometime in your life ";
 person[0]= "Winston Churchill";
-qte[1] = "Either you do or you don't, there is no try." ;
-person[1] = "Master Yoda";
 qte[2] = "Stay hungry, stay foolish.";
 person[2] = "Steve Jobs";
 qte[3] = "The mind is everything. What you think you become.";
@@ -86,14 +89,12 @@ qte[8]="If you're good at something. Never do it for free."
 person[8]="Joker (DC Comics)";
 qte[9]="Make the most of yourself... for that is all there is of you.";
 person[9]="Ralph Waldo Emerson";
-qte[10]="No task is impossible to complete, it's just difficult to accomplish.";
-person[10]="Isaiah Winfrey (myself)";
 qte[11]="And now that you don't have to be perfect, you can be good.";
 person[11]="John Steinbeck";
-qte[12]="Always in motion is the future.";
-person[12]="Master Yoda (Star Wars)";
-qte[13] ="Walk tall";
-person[13] = "Final Fantasy XV (video game)";
+qte[12]="Don't be afraid of change. You may end up losing something good...but you will probably end up gaining something better!"
+person[12]="Steve Jobs"
+qte[13]="Anything is possible!"
+person="Les Brown"
 display = Math.floor(Math.random()*qte.length);
 
 document.write("<DL>\n");
