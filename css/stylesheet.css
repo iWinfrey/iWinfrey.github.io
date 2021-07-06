@@ -18,7 +18,7 @@ and open the template in the editor.
     margin: 0;
     padding: 0;
   }
-  
+
   li {
     display: inline;
     float: left;
@@ -36,9 +36,7 @@ and open the template in the editor.
 img {
   width: 200px;
 }
-h3,
-h4,
-h5 {
+h3, h4, h5 {
   font-size: 24px;
 }
 
@@ -50,7 +48,7 @@ main {
 body {
   width: 100%;
   background: #000017;
-  margin: -10px;
+  margin: -5px;
 }
 
 /*
@@ -62,21 +60,13 @@ Pong Game
 }
 
 /*Heading text*/
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
   color: #1cb0eb;
   background-color: #032750;
   text-align: center;
   white-space: normal;
 
   font-family: "Stencil STD";
-  /* background: -webkit-linear-gradient(#000000, #00008b, #000000);
-  background: -o-linear-gradient(#000000, #00008b, #000000);
-  background: -moz-linear-gradient(#000000, #00008b, #000000);
-  background: lienear-gradient(#000000, #00008b, #000000); */
 }
 
 /*Areas containing content*/
@@ -86,56 +76,36 @@ article {
   background-color: transparent, #4c4c66;
   background: rgba(0, 100, 204, 0.5);
 
-  /*
-white-space:normal;
-    position:relative;
-    width: 40%;
-    left:0px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-   
-     padding: 20px 24%;
-    z-index: 0;
-    -webkit-transform-origin: 0 50%;
-    -moz-transform-origin: 0 50%;
-    -ms-transform-origin: 0 50%;
-    -o-transform-origin: 0 50%;
-    transform-origin: 0 50%;
- */
-
   width: 68%;
 }
 
 /*Random Quote and date/time*/
-aside,
-sidebar {
-  width: 30%;
 
+
+
+.dateTimeSection {
+  border: 2px solid blue;
+  background: rgba(0, 100, 204, 0.5);
+}
+.motiveQ {
+  width: 30%;
   float: right;
   border: 2px solid blue;
   background: rgba(0, 100, 204, 0.5);
-
-  /*
-        position:relative;
-       right:-90.8%;
-        
-        overflow:contain;
-        
-	
-	white-space:normal;
-	*/
-  /* background: -webkit-linear-gradient(#000000, #00008b, #000000);
-  background: -o-linear-gradient(#000000, #00008b, #000000);
-  background: -moz-linear-gradient(#000000, #00008b, #000000);
-  background: lienear-gradient(#000000, #00008b, #000000); */
 }
 
+.sectionContent {
+  float: left;
+  display: block;
+  color: #ffffff;
+  border: 2px solid black;
+  background-color: transparent, #4c4c66;
+  background: rgba(0, 100, 204, 0.5);
+  width: 68%;
+}
 /*Scale to size on other media screens*/
 
-p,
-DL,
-DT {
+p, DL, DT {
   color: #ffffff;
 
   position: relative;
@@ -155,12 +125,6 @@ nav, a {
   /* background-color: #191970; */
   font-family: "Copperplate Gothic Bold";
 
-
-
-  /* background: -webkit-linear-gradient(#000000, blue, #000000);
-  background: -o-linear-gradient(#000000, blue, #000000);
-  background: -moz-linear-gradient(#000000, blue, #000000);
-  background: lienear-gradient(#000000, blue, #000000); */
   text-decoration: none;
   display: block;
 }
@@ -169,10 +133,6 @@ a {
   border: 5px solid #041a44;
   color: #194bf0;
   background-color: #063e7e;
-  /* background: -webkit-linear-gradient(#000000, blue, #000000);
-  background: -o-linear-gradient(#000000, blue, #000000);
-  background: -moz-linear-gradient(#000000, blue, #000000);
-  background: lienear-gradient(#000000, blue, #000000); */
 }
 
 ul {
@@ -186,13 +146,13 @@ li {
   float: left;
 }
 
-
 /*Portfolio banner*/
 /* .portfolioBanner > video  {
   text-align: center;
   padding: 60px;
   width: 100%;
 } */
+
 .portfolioBanner {
   width: 100%;
 }
@@ -200,56 +160,6 @@ li {
   width: 100%;
   height: 250px;
 }
-
-
-/*Will display dropdown menu*/
-/* .dropdown:hover .dropdown-content {
-  display: block;
-}
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-
-  background-color: inherit;
-} */
-
-/*
-.dropdown-content2 {
-
-    display: none;
-    postion: fixed;
-    background-color: #000000;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
- 
-   height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 2px;
-
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:#000000;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-*/
 
 a:link {
   color: #00ffff;
@@ -270,14 +180,6 @@ img {
   border-width: 10px;
 }
 
-/*
-table, th, td caption {
-	color:#FFFFFF;
-	font-size:24px;
-	border:none;
-}
-*/
-
 a href {
   font-size: 24px;
 }
@@ -288,110 +190,8 @@ tr {
   background: lienear-gradient(#000000, #ff0000, #000000);
 }
 
-/*
-caption
-{
-font-size:24px;
-border-style:outset;
-background: -webkit-linear-gradient(#000000,#FF0000,#000000);
- 		background: -o-linear-gradient(#000000,#FF0000,#000000);
- 		background: -moz-linear-gradient(#000000,#FF0000,#000000);
- 		background: lienear-gradient(#000000,#FF0000,#000000); 
-		border-color:#B8860B;
-}
-*/
-
-/*------------------------------------*\
-    NAV
-\*------------------------------------*/
-/*
-nav{
-    list-style:none;
-    font-weight:bold;
-   	white-space:normal;
-    margin:0 auto;
-    float:left; /* Clear floats */
-/*  width:100%; *\}
-    /* Bring the nav above everything else--uncomment if needed.
-    position:relative;
-    z-index:5;
-    */
-
-/* nav li {
-  float: left;
-  margin-right: 40%;
-  position: relative;
-} */
-/*
-nav a{
-    display:block;
-    padding:5px;
-    color:#fff;
-    background:#333;
-    text-decoration:none;
-}
-nav a:hover{
-    color:#fff;
-    background:#6b0c36;
-    text-decoration:underline;
-}
-
-*/
-
-/* ---- stats.js ---- */
-/*
-.count-particles{
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-
-.js-count-particles{
-  font-size: 1.1em;
-}
-
-#stats,
-.count-particles{
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-#stats{
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.count-particles{
-  border-radius: 0 0 3px 3px;
-}
-
-
-/* ---- particles.js container ---- */
-
 html {
   max-width: 100%;
   background: transparent;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
-/* 
-#particles-js{
-height:100%;
-width:100%;
-position:absolute;
-background-repeat: no-repeat;
-background-size: cover;
-background-position: 100% 100%;
-
-} */

@@ -11,123 +11,123 @@ Project Name: index page
 Date: 11/11/17
 -->
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="css/stylesheet.css">
-        <title>Main Profile Page</title>      <!--Page title-->
-        <meta charset="UTF-8">
-        <meta name="description" content="Personal portfolio of projects and demonstration of website design made by Isaiah Winfrey">
-        <meta name="author" content="Isaiah Winfrey">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+  <head>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <title>Main Profile Page</title>
+    <!--Page title-->
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Personal portfolio of projects and demonstration of website design made by Isaiah Winfrey"
+    />
+    <meta name="author" content="Isaiah Winfrey" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header>
+      <div class="portfolioBanner">
+        <!-- <h1>Isaiah Winfrey's Web Portfolio</h1> -->
+        <!-- <img src="images/iWinfreyBan.gif" alt="Portfolio Banner" /> -->
+        <img src="images/iWinfreyBanner.png" alt="Portfolio Banner" />
+        <!-- <video playsinline autoplay muted loop> -->
+        <!-- <source src="images/iWinfreyBanner.mp4" type="video/mp4"> -->
+        <!-- </video> -->
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="ProjectsPG.html">Projects</a></li>
+
+        <li><a href="updatepage.html">Updates</a></li>
+
+        <li><a href="AboutMePG.html">About Me</a></li>
+      </ul>
+    </nav>
+
+    <!--Aside menu with current date/time and random quotes-->
+    <div class="dateTimeSection">
     
-    <body>
- 
-        <header>
-            <div class="portfolioBanner">
-            <!-- <h1>Isaiah Winfrey's Web Portfolio</h1> -->
-            <img src="images/iWinfreyBan.gif" alt="Portfolio Banner">
-            <!-- <video playsinline autoplay muted loop> -->
-            <!-- <source src="images/iWinfreyBanner.mp4" type="video/mp4"> -->
-            <!-- </video> -->
-            </div>
-        </header>
-                  
-        <nav>
- <!-- <div class="container"> -->
-        <ul>
-            <!-- <div class="dropdown"> -->
-           <li><a href="index.html">Home</a></li> 
-            <!-- </div> -->
-            <!-- <div class="dropdown">  -->
-                <li><a href="ProjectsPG.html">Projects</a></li>
-              <!-- </div> -->
-            <!-- <div class="dropdown"> -->
-                <li><a href="updatepage.html">Updates</a></li>
-            <!-- </div> -->
-  
-            <!-- <div class ="dropdown"> -->
-            <li><a href="AboutMePG.html">About Me</a></li>
-           </ul>
-        </nav>
-          <!-- </div> -->
-        
-        <!--Aside menu with current date/time and random quotes-->
-        <aside>
-           
-            <p>
-    <script type="text/javascript">
-document.write ('<p>The current date and time is: <span id="date-time">', new Date().toLocaleString(), '<\/span>.<\/p>')
-if (document.getElementById) onload = function () {
-	setInterval ("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
-}
+      <p>
+        <script type="text/javascript">
+          document.write(
+            '<p> <span id="date-time">',
+            new Date().toLocaleString(),
+            "<\/span>.<\/p>"
+          );
+          if (document.getElementById)
+            onload = function () {
+              setInterval(
+                "document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()",
+                50
+              );
+            };
+        </script>
+      </p>
+    </div>
 
-        
-                </script></p>
-  
-            <p>Motivational Quote: </p>
- 
-                <!--Random Quote Generator -->
-<p>
-<script type="text/javascript">
-qte = [];
-person = [];
-qte[0] = "You have enemies? Good. That means you stood up for something, sometime in your life ";
-person[0]= "Winston Churchill";
-qte[2] = "Stay hungry, stay foolish.";
-person[2] = "Steve Jobs";
-qte[3] = "The mind is everything. What you think you become.";
-person[3] = "Buddha";
-qte[4]= "Your fastest way is too slow for me.";
-person[4]= "Barre Brown (Father)";
-qte[5]="The best way to guarantee a loss is to quit.";
-person[5]="Morgan Freeman";
-qte[6]= "Whatever you are. Be a good one.";
-person[6]= "Abraham Lincoln";
-qte[7]="If you can't make it good, at least make it look good...";
-person[7]="Bill Gates";
-qte[8]="If you're good at something. Never do it for free."
-person[8]="Joker (DC Comics)";
-qte[9]="Make the most of yourself... for that is all there is of you.";
-person[9]="Ralph Waldo Emerson";
-qte[11]="And now that you don't have to be perfect, you can be good.";
-person[11]="John Steinbeck";
-qte[12]="Don't be afraid of change. You may end up losing something good...but you will probably end up gaining something better!"
-person[12]="Steve Jobs"
-qte[13]="Anything is possible!"
-person="Les Brown"
-display = Math.floor(Math.random()*qte.length);
+    <div class="motiveQ">
+      <p>Motivational Quote:</p>
+      <!--Random Quote Generator -->
+      <p>
+        <script type="text/javascript">
+          qte = [];
+          person = [];
+          qte[0] =
+            "You have enemies? Good. That means you stood up for something, sometime in your life ";
+          person[0] = "Winston Churchill";
+          qte[1] = "Stay hungry, stay foolish.";
+          person[1] = "Steve Jobs";
+          qte[2] = "The mind is everything. What you think you become.";
+          person[2] = "Buddha";
+          qte[3] = "Your fastest way is too slow for me.";
+          person[3] = "Barre Brown (Father)";
+          qte[4] = "The best way to guarantee a loss is to quit.";
+          person[4] = "Morgan Freeman";
+          qte[5] = "Whatever you are. Be a good one.";
+          person[5] = "Abraham Lincoln";
+          qte[6] = "If you can't make it good, at least make it look good...";
+          person[6] = "Bill Gates";
+          qte[7] =
+            "Make the most of yourself... for that is all there is of you.";
+          person[7] = "Ralph Waldo Emerson";
+          qte[8] =
+            "And now that you don't have to be perfect, you can be good.";
+          person[8] = "John Steinbeck";
+          qte[9] =
+            "Don't be afraid of change. You may end up losing something good...but you will probably end up gaining something better!";
+          person[9] = "Steve Jobs";
+          qte[10] = "Anything is possible!";
+          person[10] = "Les Brown";
+          display = Math.floor(Math.random() * qte.length);
 
-document.write("<DL>\n");
-document.write("<DT>" + "\"" + qte[display] + "\"</DT>\n");
-document.write("<DD>"+"-" + person[display] + "</DT>\n");
-document.write("</DL>\n");
+          document.write("<DL>\n");
+          document.write("<DT>" + '"' + qte[display] + '"</DT>\n');
+          document.write("<DD>" + "-" + person[display] + "</DT>\n");
+          document.write("</DL>\n");
+        </script>
+      </p>
+    </div>
+    <main>
+      <!--Content-->
 
 
-</script>
-</p>
-</aside>
-            <main>
-        <!-- <div id="particles-js"></div><script  src="scripts/particles.js"></script>
-<script src="scripts/app.js"></script> -->
- 
+      <div class="sectionContent">
+        <h2>2021 Update</h2>
+        <p>
+          The portfolio isn't completely updated with everything that I've been
+          doing. I am working on it as I get the chance to.
+        </p>
 
-            
-       <!--Content-->
-        <article>
-            <section>
-                <p>This is a web portfolio that I designed using HTML5, CSS3, and a bit of JavaScript.
-                    It is not completed and this is only the start of it.
-                    I will be adding more content to the site as I figure out 
-                    new ideas.</p>
-        <p>Anyways I still have ways to go but now that I have tech and software
-            I am pretty sure this will go well</p>
-        <p>This will be the main page in which users who visit the site will
-            be able to view the content by going through the nav links towards the top of the page</p>
-            </section>
-                       
-        </article>
-      
-         
-       </main>
-    </body>
+        <p>
+          This is a web portfolio that I designed using HTML5, CSS3, and a bit
+          of JavaScript. It is not completed and this is only the start of it. I
+          will be adding more content to the site as I figure out new ideas.
+        </p>
+    </div>
+    </main>
+  </body>
 </html>

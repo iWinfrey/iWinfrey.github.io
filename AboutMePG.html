@@ -5,82 +5,78 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <link rel="stylesheet" href="css/stylesheet.css">
-        <title>About Me Page</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <h1 align="center"> About Me </h1>
-               <nav>
-                <ul>
-                    <!-- <div class="dropdown"> -->
-                   <li><a href="index.html">Home</a></li> 
-                    <!-- </div> -->
-                    <!-- <div class="dropdown">  -->
-                        <li><a href="ProjectsPG.html">Projects</a></li>
-                      <!-- </div> -->
-                    <!-- <div class="dropdown"> -->
-                        <li><a href="updatepage.html">Updates</a></li>
-                    <!-- </div> -->
-          
-                    <!-- <div class ="dropdown"> -->
-                    <li><a href="AboutMePG.html">About Me</a></li>
-                   </ul>
-        </nav>
-         
-        <!-- <div id="particles-js"></div><script src="scripts/particles.js"></script>
-        <script src="scripts/app.js"></script> -->
-        
-        <aside>
-            <p>
-                <script type="text/javascript">
-                    document.write('<p>The current date and time is: <span id="date-time">', new Date().toLocaleString(), '<\/span>.<\/p>')
-                    if (document.getElementById)
-                        onload = function () {
-                            setInterval("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
-                        }
+  <head>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <title>About Me Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+        <div class="portfolioBanner">
+          <!-- <h1>Isaiah Winfrey's Web Portfolio</h1> -->
+          <!-- <img src="images/iWinfreyBan.gif" alt="Portfolio Banner" /> -->
+          <img src="images/iWinfreyBanner.png" alt="Portfolio Banner" />
+          <!-- <video playsinline autoplay muted loop> -->
+          <!-- <source src="images/iWinfreyBanner.mp4" type="video/mp4"> -->
+          <!-- </video> -->
+        </div>
+      </header>
+    <h1 align="center">About Me</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ProjectsPG.html">Projects</a></li>
+        <li><a href="updatepage.html">Updates</a></li>
+        <li><a href="AboutMePG.html">About Me</a></li>
+      </ul>
+    </nav>
 
-
-                </script>
-            </p>
-        </aside> 
-        
-        
-        <article>
-            <section>
-             
-             
-                <p>My name is Isaiah Winfrey. I am currently a senior attending Wright State University
-                    and plan to graduate fall 2019. I am aiming to get a Bachelors in the major
-                    of Computer Science. </p>
-                <p>My career goal is to go into the field of IT as a software
-                    developer and work with application development. In my spare time I also attempt 
-                    work with making my own games and applications. I have been doing 
-                    studying outside of classes to learn more with coding and developing. 
-                    At the moment I don't have much but I am currently working with the basics
-                    for game making and will hopefully have something to display in due time.</p> 
-
-            </section>
-        </article>
-
+    <div class="dateTimeSection">
+    
+        <p>
+          <script type="text/javascript">
+            document.write(
+              '<p> <span id="date-time">',
+              new Date().toLocaleString(),
+              "<\/span>.<\/p>"
+            );
+            if (document.getElementById)
+              onload = function () {
+                setInterval(
+                  "document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()",
+                  50
+                );
+              };
+          </script>
+        </p>
+      </div>
+    <div class="sectionContent">
+        <p>
+        My name is Isaiah Winfrey. I am a graduate of Wright State University
+        with Bachelor of Arts Degree in Computer Science.
+      </p>
+      <p>
+        My career goal as of right now is to work on my computer and technical
+        skills. I am looking to develop new skills and discover where my skills
+        are best at. In my spare time I also attempt work with making my own
+        projects such as applications and games. I have been doing studying
+        outside of classes to learn more with coding and developing. At the
+        moment I don't have much but I am currently working with the basics for
+        game making and will hopefully have something to display in due time.
+      </p>
+    </div>
+    <div class="sectionContent">
+    <p>
         <h1>Skills</h1>
-        <article>
-            <p>To go along with being a computer science major, I also have some skills 
-                and experience in coding. I have started coding since my junior year in high school.
-                Some of them I did not have too much experience with as far as class assignments.
-                Ever since then when I started college and learning other languages I decided to 
-                look more into different languages and relearn the ones I used in high school. 
-
-
-
-            </p>
-
-            <p>
-
-            </p>
-        </article>
-
-    </body>
+      <p>
+        To go along with being a graduate in computer science, I also have some
+        skills and experience in coding. I have started coding since my junior
+        year in high school. Some of them I did not have too much experience
+        with as far as class assignments. Ever since then when I started college
+        and learning other languages I decided to look more into different
+        languages and relearn the ones I used in high school.
+      </p>
+    </div>
+  </body>
 </html>
