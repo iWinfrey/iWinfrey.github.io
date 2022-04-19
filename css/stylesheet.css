@@ -36,7 +36,9 @@ and open the template in the editor.
 img {
   width: 200px;
 }
-h3, h4, h5 {
+h3,
+h4,
+h5 {
   font-size: 24px;
 }
 
@@ -60,7 +62,11 @@ Pong Game
 }
 
 /*Heading text*/
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   color: #1cb0eb;
   background-color: #032750;
   text-align: center;
@@ -81,11 +87,11 @@ article {
 
 /*Random Quote and date/time*/
 
-
-
 .dateTimeSection {
   border: 2px solid blue;
   background: rgba(0, 100, 204, 0.5);
+  float: right;
+  margin-left: 10px;
 }
 .motiveQ {
   width: 30%;
@@ -94,7 +100,7 @@ article {
   background: rgba(0, 100, 204, 0.5);
 }
 
-.sectionContent {
+.sectionHomeContent {
   float: left;
   display: block;
   color: #ffffff;
@@ -103,9 +109,23 @@ article {
   background: rgba(0, 100, 204, 0.5);
   width: 68%;
 }
+
+.sectionContent {
+ 
+  display: block;
+  color: #ffffff;
+  border: 2px solid black;
+  background-color: transparent, #4c4c66;
+  background: rgba(0, 100, 204, 0.5);
+  width: 95%;
+  margin: auto;
+  padding: 2px;
+}
 /*Scale to size on other media screens*/
 
-p, DL, DT {
+p,
+DL,
+DT {
   color: #ffffff;
 
   position: relative;
@@ -114,7 +134,8 @@ p, DL, DT {
   white-space: normal;
 }
 
-nav, a {
+nav,
+a {
   font-size: 24px;
 
   text-align: center;
@@ -146,6 +167,10 @@ li {
   float: left;
 }
 
+li a {
+  display: block;
+  padding: 8px;
+}
 /*Portfolio banner*/
 /* .portfolioBanner > video  {
   text-align: center;
